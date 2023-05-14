@@ -1,22 +1,22 @@
 const tags = document.querySelectorAll('[data-tag]');
-const titles = document.querySelectorAll('[data-relatedtags]');
-const highlightElement = (title) => title.classList.add('higlightedProject');
+const projects = document.querySelectorAll('[data-relatedtags]');
+const highlightProject = (project) => project.classList.add('higlightedProject');
 
-const unselectButttons = () => {
-  const selectedButtons = document.querySelectorAll('.selectedTag');
-  selectedButtons.forEach((button) => button.classList.remove('selectedTag'));
+const unselectTags = () => {
+  const selectedTags = document.querySelectorAll('.selectedTag');
+  selectedTags.forEach((tag) => tag.classList.remove('selectedTag'));
 };
 
 const filterByTag = (tag) => {
-  unselectButttons();
+  unselectTags();
   tag.classList.add('selectedTag');
   const tagValue = tag.dataset.tag;
-  return titles.forEach((title) => {
-    title.classList.remove('higlightedProject');
-    const relatedTags = title.dataset.relatedtags
-      ? JSON.parse(title.dataset.relatedtags)
+  return projects.forEach((project) => {
+    project.classList.remove('higlightedProject');
+    const relatedTags = project.dataset.relatedtags
+      ? JSON.parse(project.dataset.relatedtags)
       : [];
-    relatedTags?.includes(tagValue) ? highlightElement(title) : null;
+    relatedTags?.includes(tagValue) ? highlightProject(project) : null;
   });
 };
 
