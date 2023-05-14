@@ -68,6 +68,16 @@ body{
 	color: var(--color-black);
 }
 
+button {
+	background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
+
 .barra{
 	border: 2px solid var(--border-color);
 	border-radius: 15px;
@@ -728,4 +738,12 @@ a.lista-proyectos + div img.img-preview{
 }
 .player-volume:focus::-ms-fill-upper {
   background: var(--color-europe);
+}
+
+.higlightedProject {
+ color: red;
+}
+
+.selectedTag {
+ color: red;
 }
