@@ -11,7 +11,6 @@ const progressFilled = document.querySelector('.player-progress-filled');
 const playerCurrentTime = document.querySelector('.player-time-current');
 const playerDuration = document.querySelector('.player-time-duration');
 const volumeControl = document.querySelector('.player-volume');
-console.log('hola');
 document.addEventListener('DOMContentLoaded', () => {
   // Update progress bar and time values as audio plays
   audioElement.addEventListener('timeupdate', () => {
@@ -82,7 +81,3 @@ document.addEventListener('DOMContentLoaded', () => {
   progress.addEventListener('mouseup', () => (mousedown = false));
   // Track credit: Outfoxing the Fox by Kevin MacLeod under Creative Commons + MDN for the link.
 });
-const tags = document.querySelectorAll('[data-tag]');
-console.log('hola', { tags });
-const filterByTag = () => console.log('hol');
-tags.forEach((tag) => tag.addEventListener('click', filterByTag));
