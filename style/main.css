@@ -742,12 +742,16 @@ button {
 	font: inherit;
 	cursor: pointer;
 	outline: inherit;
+
+	&:not(.selectedTag):hover {
+		font-weight: 600;
+	}
 }
 
 .higlightedProject {
- color: red;
+ opacity: 0.5;
 }
 
 .selectedTag {
- color: red;
+	font-weight: 600;
 }
