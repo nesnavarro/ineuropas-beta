@@ -12,8 +12,6 @@ const playerCurrentTime = document.querySelector(".player-time-current")
 const playerDuration = document.querySelector(".player-time-duration")
 const volumeControl = document.querySelector(".player-volume")
 document.addEventListener("DOMContentLoaded", () => {
-  // Set times after page load 
-  setTimes()
   // Update progress bar and time values as audio plays 
   audioElement.addEventListener("timeupdate", () => {
     progressUpdate()
