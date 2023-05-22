@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Poliglotía | Imaginar nuevas Europas</title>
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,400;0,600;0,700;1,200;1,300;1,600&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/b2091d73b7.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="style/main.css">
+	<link rel="icon" type="image/png" href="img/favicon.png"/>
+
+</head>
+
+
+<body class="background-color">
+	<header>
+			<div class="cabecera full-container padding-bottom-L slide-down">
+				<nav class="padding-bottom-M">
+					<a class="home-back" href="index.html"><i class="fa-solid fa-arrow-left"></i>&nbsp;&nbsp;Imaginar nuevas Europas</span></a>		
+				</nav>
+				
+			</div>
+	</header>
+	<main class="full-container padding-bottom-XL">
+		<section class="box slide-up">
+			<div class="padding-bottom-M">
+				<h1>Poliglotía</h1>
+				<h2 class="proyectos-lugar padding-bottom-M">IVAM · Valencia</h2>
+				<div>
+					#comunidades #fronteras
+				</div>
+			</div>
+			<div class="padding-bottom-M">
+				<div class="player-controls">
+				    <button class="player-play-btn" role="button" aria-label="Play" data-playing="false">
+				   		<div class="player-icon-play">
+				    		<svg xmlns="https://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><title>play</title><polygon class="icon-play" points="19.05 12 6 3.36 6 20.64 19.05 12"/><rect class="icon-container" width="24" height="24"/></svg>
+				       	</div>
+				      	<div class="player-icon-pause hidden">
+				        	<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><title>pause</title><g><rect  class="icon-pause" x="6" y="3.26" width="4" height="17.48"/><rect class="icon-pause" x="14" y="3.26" width="4" height="17.48"/></g><rect class="icon-container" width="24" height="24"/></svg>
+				      	</div>
+				    </button>
+				    <div class="player-timeline">
+				      	<span class="player-time player-time-current">00:00:00</span>
+				      	<div class="player-progress">
+				        	<div class="player-progress-filled"></div>
+				      	</div>
+				      	<span class="player-time player-time-duration">00:00:00</span>
+				   	</div>
+				    <div class="player-volume-container">
+				        <input type="range" id="volume" min="0" max="1" value="1" step="0.01" class="player-volume" />
+				    </div>
+				</div>
+				<audio src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/858/outfoxing.mp3" crossorigin="anonymous" ></audio>
+				
+			</div>
+			<div class="padding-bottom-L">
+				<button class="boton" onclick="leerMas()" id="miBoton">
+					Transcripción
+				</button>
+			
+				<script>
+					function leerMas() {
+ 						var masTexto = document.getElementById("mas");
+ 						var botonTexto = document.getElementById("miBoton");
+
+ 						if (mas.style.display === "inline") {
+    						botonTexto.innerHTML = "Transcripción"; 
+   							masTexto.style.display = "none";
+ 						} else {
+    						botonTexto.innerHTML = "Ocultar transcripción"; 
+    						masTexto.style.display = "inline";
+ 						}
+					}
+				</script>	
+			</div>
+			<article id="mas">
+				<div  class="transcripcion box">
+					<div class="transcripcion-texto margin-bottom-M">
+						<p>Esta sería la transcripción. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vehicula mauris purus, quis dignissim turpis eleifend in. Nam accumsan dolor sed gravida porta. Maecenas sed augue ultricies lectus commodo euismod. Curabitur in commodo massa. Aenean viverra justo velit, vitae malesuada lorem elementum et. Suspendisse nulla mi, luctus ut suscipit id, cursus ac ipsum. Phasellus pharetra blandit lorem. Morbi sit amet fringilla quam. Sed lobortis non urna a maximus.</p>
+						<p>Esta sería la transcripción. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vehicula mauris purus, quis dignissim turpis eleifend in. Nam accumsan dolor sed gravida porta. Maecenas sed augue ultricies lectus commodo euismod. Curabitur in commodo massa. Aenean viverra justo velit, vitae malesuada lorem elementum et. Suspendisse nulla mi, luctus ut suscipit id, cursus ac ipsum. Phasellus pharetra blandit lorem. Morbi sit amet fringilla quam. Sed lobortis non urna a maximus.</p>
+						<p>Esta sería la transcripción. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vehicula mauris purus, quis dignissim turpis eleifend in. Nam accumsan dolor sed gravida porta. Maecenas sed augue ultricies lectus commodo euismod. Curabitur in commodo massa. Aenean viverra justo velit, vitae malesuada lorem elementum et. Suspendisse nulla mi, luctus ut suscipit id, cursus ac ipsum. Phasellus pharetra blandit lorem. Morbi sit amet fringilla quam. Sed lobortis non urna a maximus.</p>
+						<p>Esta sería la transcripción. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vehicula mauris purus, quis dignissim turpis eleifend in. Nam accumsan dolor sed gravida porta. Maecenas sed augue ultricies lectus commodo euismod. Curabitur in commodo massa. Aenean viverra justo velit, vitae malesuada lorem elementum et. Suspendisse nulla mi, luctus ut suscipit id, cursus ac ipsum. Phasellus pharetra blandit lorem. Morbi sit amet fringilla quam. Sed lobortis non urna a maximus.</p>
+					</div>
+					<!-- <div class="text-right">
+						<button  class="boton" onclick="leerMas()" id="miBoton">
+					Ocultar transcripción
+					</div> -->
+				</button>			
+				</div>
+			</article>
+			<article class="padding-bottom-L">
+				<div class="grid grid2">
+					<div class="descripcion-proyecto">
+						<p><em>Poliglotía</em>, arranca en 2021 como un proceso creativo de carácter colectivo y multidisciplinar a partir de las diversas lenguas, prácticas culturales y vivencias de sus participantes, pasando a ser desde entonces un programa permanente dentro del IVAM. <em>Poliglotía</em> es una oportunidad de repensar críticamente el museo desde las miradas y las voces de personas y colectivos de diversas procedencias y que tradicionalmente no han formado parte de la programación de los museos, aportando nuevas visiones y otras maneras de hacer, sentir y comunicar.</p>
+						<p>El equipo motor de <em>Poliglotía</em> es el de actividades públicas del museo junto con Paco Inclán, escritor y profesor de español para personas migrantes y refugiadas. Sin embargo, <em>Poliglotía</em> lo componen y construyen la comunidad de participantes procedentes de muy distintas nacionalidades, culturas y lenguas, residentes en Valencia, que se han vinculado al museo en cada una de las tres convocatorias que han tenido lugar hasta ahora.</p>
+						<p>En <em>Poliglotía</em> se busca generar contenidos en común mediante la escucha colectiva y el intercambio de experiencias y saberes. Se transforma en cada sesión y con cada proyecto, poniendo a prueba la plasticidad y apertura de la institución, que acompaña los procesos situándose como un participante más. En cada una de las tres convocatorias <em>Poliglotía</em> ha mutado de carácter. La primera, activó el “Grupo de Estudios Políglotas”, una propuesta de mediación en el museo a partir de las doce lenguas maternas que aportaban sus integrantes. Paralelamente, se llevó a cabo una programación mensual de actividades abiertas al público. El segundo año, bajo el título “Inventario. <em>Poliglotía</em> (Pensar en común el museo)”, se puso en marcha un espacio de encuentro para reflexionar sobre las posibilidades y límites del propio museo como espacio arquitectónico, institucional, relacional, creativo y expositivo. Las conclusiones fueron compartidas con el público en sesiones de puertas abiertas. Durante 2023 se está llevando a cabo la “Escuela de saberes diversos”, un ciclo (auto)formativo que busca conectar los conocimientos, intereses e inquietudes de los y las participantes con la propuesta expositiva del IVAM y que va tomando forma a partir de los mismos.</p>
+						<div class="participantes">
+							<p>Participantes: Tarif Ashtar, Paula Guardiola, Yulia Fert, Badinengany Katalay-Sun, Hu Zhao, Milagros Arias, Teona Ruzadze, Ivan Reznik, Joaquín Artime, Clara Solbes, Javier Lorente Puchades, Yahui Liu Zhou, Milagros Arias, Óscar Blanco, Elena Medina, Malika Oucheitachn, Sonia Pina, Esther Santiago Lizama, José Vaquerizo, Sonia Martínez, Gema Gil, Irene Llàcer, Paco Inclán, Mariana Bandeira, Neus Berenguer, Isabel Cuellar, Gudrita Lape, Nicolás Manzonni, Soledad Martín, Empar Mestre, Saba Moradi, Noemi Neri, Yondri Soss, Francesco Rondelli, Carolina Trujillo, Tono Vizcaíno, Yiwen Xiao, Valencia Acoge, Librería United Minds, Cocinas Migrantes, Meral Gokcek y Abdelaziz Bouhlassa Bachari.</p>
+						</div>						
+					</div>
+					<div class="padding-bottom-M">
+						<div class="slider-container">
+							<div class="slider">
+								<img src="img/poliglotia1.jpg" alt="Slide 1">
+								<img src="img/poliglotia2.jpg" alt="Slide 2">
+								<img src="img/poliglotia3.jpg" alt="Slide 3">
+								<img src="img/poliglotia4.jpg" alt="Slide 3">
+								<img src="img/poliglotia5.jpg" alt="Slide 3">
+							</div>					
+						</div>
+						<div class="flechas">
+							<button class="prev boton"></button>
+							<button class="next boton"></button>
+						</div>
+					</div>
+				</div>	
+			</article>
+			<article class="enlaces-externos padding-bottom-XL">
+					<button class="boton boton-out"><a href="https://ivam.es/es/actividades/poliglotia/" target="_blank">Poliglotía <i class="fa-solid fa-arrow-right-long"></i></a></button>
+					<button class="boton boton-out"><a href="https://ivam.es/es/">IVAM <i class="fa-solid fa-arrow-right-long"></i></a></button>
+			</article>
+			<article class="activaciones padding-bottom-XL">
+				<div class="flex padding-bottom-L">
+					<div class="punto"></div>
+					<h2 class="text-center">ACTIVACIONES</h2>
+					<div class="barra"></div>
+				</div>
+				<ul class="grid grid3">
+					<li class="hover-right">
+						<a href="https://ivam.es/en/actividades/poliglotia-escuela-de-saberes-diversos-23/"> POLIGLOTÍA. Escuela de saberes diversos. 23 <i class="fa-solid fa-arrow-right-long"></i>
+							<br>
+							<span class="fecha"> Del 7 de febrero al 27 de junio, 2023 </span>
+						</a>
+					</li>								
+				</ul>
+			</article>
+		</section>
+	</main>
+	<footer class="footer full-container">
+		<div class="flex flex-center logos-centro padding-bottom-XL"> 
+			<div>
+				<img src="img/logo-tea.png">
+			</div>
+			<div>
+				<img src="img/logo-madraza.png">
+			</div>
+			<div>
+				<img src="img/logo-mncars.png">
+			</div>
+			<div>
+				<img src="img/logo-macba.png">
+			</div>
+			<div>
+				<img src="img/logo-ivam.png">
+			</div>
+			<div>
+				<img src="img/logo-esbaluard.png">
+			</div>
+			<div>
+				<img src="img/logo-artium.png">
+			</div>
+		</div>
+		<p>Esta web  ha sido creada con el apoyo de la UGR</p>
+	</footer>
+
+	<script src="js/script.js"></script>
+	<script src="js/script-slider.js"></script>
+
+</body>
+
+</html>

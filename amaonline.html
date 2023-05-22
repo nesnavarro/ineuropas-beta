@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>AMAonline | Imaginar nuevas Europas</title>
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,400;0,600;0,700;1,200;1,300;1,600&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/b2091d73b7.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="style/main.css">
+	<link rel="icon" type="image/png" href="img/favicon.png"/>
+
+</head>
+
+
+<body class="background-color">
+	<header>
+			<div class="cabecera full-container padding-bottom-L slide-down">
+				<nav class="padding-bottom-M">
+					<a class="home-back" href="index.html"><i class="fa-solid fa-arrow-left"></i>&nbsp;&nbsp;Imaginar nuevas Europas</span></a>		
+				</nav>
+				
+			</div>
+	</header>
+	<main class="full-container padding-bottom-XL">
+		<section class="box slide-up">
+			<div class="padding-bottom-M">
+				<h1>AMAonline</h1>
+				<h2 class="proyectos-lugar padding-bottom-M">Artium Museoa · Vitoria-Gasteiz</h2>
+				<p>#nuevasinstitucionalidades #feminismos #contrarelatos</p>
+			</div>
+			<div class="padding-bottom-M">
+				<div class="player-controls">
+				    <button class="player-play-btn" role="button" aria-label="Play" data-playing="false">
+				   		<div class="player-icon-play">
+				    		<svg xmlns="https://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><title>play</title><polygon class="icon-play" points="19.05 12 6 3.36 6 20.64 19.05 12"/><rect class="icon-container" width="24" height="24"/></svg>
+				       	</div>
+				      	<div class="player-icon-pause hidden">
+				        	<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><title>pause</title><g><rect  class="icon-pause" x="6" y="3.26" width="4" height="17.48"/><rect class="icon-pause" x="14" y="3.26" width="4" height="17.48"/></g><rect class="icon-container" width="24" height="24"/></svg>
+				      	</div>
+				    </button>
+				    <div class="player-timeline">
+				      	<span class="player-time player-time-current">00:00:00</span>
+				      	<div class="player-progress">
+				        	<div class="player-progress-filled"></div>
+				      	</div>
+				      	<span class="player-time player-time-duration">00:00:00</span>
+				   	</div>
+				    <div class="player-volume-container">
+				        <input type="range" id="volume" min="0" max="1" value="1" step="0.01" class="player-volume" />
+				    </div>
+				</div>
+				<audio src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/858/outfoxing.mp3" crossorigin="anonymous" ></audio>
+				
+			</div>
+			<div class="padding-bottom-L">
+				<button class="boton" onclick="leerMas()" id="miBoton">
+					Transcripción
+				</button>
+			
+				<script>
+					function leerMas() {
+ 						var masTexto = document.getElementById("mas");
+ 						var botonTexto = document.getElementById("miBoton");
+
+ 						if (mas.style.display === "inline") {
+    						botonTexto.innerHTML = "Transcripción"; 
+   							masTexto.style.display = "none";
+ 						} else {
+    						botonTexto.innerHTML = "Ocultar transcripción"; 
+    						masTexto.style.display = "inline";
+ 						}
+					}
+				</script>	
+			</div>
+			<article id="mas">
+				<div  class="transcripcion box">
+					<div class="transcripcion-texto margin-bottom-M">
+						<p>Esta sería la transcripción. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vehicula mauris purus, quis dignissim turpis eleifend in. Nam accumsan dolor sed gravida porta. Maecenas sed augue ultricies lectus commodo euismod. Curabitur in commodo massa. Aenean viverra justo velit, vitae malesuada lorem elementum et. Suspendisse nulla mi, luctus ut suscipit id, cursus ac ipsum. Phasellus pharetra blandit lorem. Morbi sit amet fringilla quam. Sed lobortis non urna a maximus.</p>
+						<p>Esta sería la transcripción. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vehicula mauris purus, quis dignissim turpis eleifend in. Nam accumsan dolor sed gravida porta. Maecenas sed augue ultricies lectus commodo euismod. Curabitur in commodo massa. Aenean viverra justo velit, vitae malesuada lorem elementum et. Suspendisse nulla mi, luctus ut suscipit id, cursus ac ipsum. Phasellus pharetra blandit lorem. Morbi sit amet fringilla quam. Sed lobortis non urna a maximus.</p>
+						<p>Esta sería la transcripción. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vehicula mauris purus, quis dignissim turpis eleifend in. Nam accumsan dolor sed gravida porta. Maecenas sed augue ultricies lectus commodo euismod. Curabitur in commodo massa. Aenean viverra justo velit, vitae malesuada lorem elementum et. Suspendisse nulla mi, luctus ut suscipit id, cursus ac ipsum. Phasellus pharetra blandit lorem. Morbi sit amet fringilla quam. Sed lobortis non urna a maximus.</p>
+						<p>Esta sería la transcripción. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vehicula mauris purus, quis dignissim turpis eleifend in. Nam accumsan dolor sed gravida porta. Maecenas sed augue ultricies lectus commodo euismod. Curabitur in commodo massa. Aenean viverra justo velit, vitae malesuada lorem elementum et. Suspendisse nulla mi, luctus ut suscipit id, cursus ac ipsum. Phasellus pharetra blandit lorem. Morbi sit amet fringilla quam. Sed lobortis non urna a maximus.</p>
+					</div>
+					<!-- <div class="text-right">
+						<button  class="boton" onclick="leerMas()" id="miBoton">
+					Ocultar transcripción
+					</div> -->
+				</button>			
+				</div>
+			</article>
+			<article class="padding-bottom-L">
+				<div class="grid grid2">
+					<div class="descripcion-proyecto">
+						<p><em>AMAonline</em> es la reci&eacute;n inaugurada plataforma editorial digital de Artium MuseoA. Nace de la voluntad de permeabilizar los muros f&iacute;sicos y simb&oacute;licos de la instituci&oacute;n y contrarrestar sus din&aacute;micas centr&iacute;petas explorando las posibilidades que ofrece Internet para desplegar discursos, abrir conversaciones y generar comunidad. A trav&eacute;s de <em>AMAonline</em>, Artium Museoa no solo pretende compartir sus contenidos sino tambi&eacute;n abrir los procesos de reflexi&oacute;n y aprendizaje convocando a voces m&uacute;ltiples de fuera de la instituci&oacute;n. No se trata de un mero complemento online al modelo convencional de museo, sino de un dispositivo que, junto con otros que est&aacute; ensayando Artium Museoa, repiensen ese modelo institucional.</p>
+						<p>El comit&eacute; editorial de <em>AMAonline</em>, formado por el equipo curatorial del museo y otros agentes externos invita a autores, especialistas y artistas a contribuir peri&oacute;dicamente con textos po&eacute;ticos, ficcionales o ensay&iacute;sticos y con piezas art&iacute;sticas. Estas voces provienen del &aacute;mbito expandido del arte y de la cultura, tanto en su dimensi&oacute;n local como global.</p>
+						<p><em>AMAonline</em> est&aacute; estructurada en torno a tres secciones, cada una de ellas inspirada en distintas obras de la fallecida autora de ciencia ficci&oacute;n feminista Ursula K. Le Guin en <a href="https://www.amaonline.eus/es/category/cosechar-conocimiento/"><em>Cosechar conocimiento</em></a> cada mes, un colaborador del museo hace una selecci&oacute;n de lo que ha estado leyendo, viendo o escuchando online recientemente. En materia de palabras da voz a los discursos art&iacute;sticos contempor&aacute;neos en sus m&uacute;ltiples formas: po&eacute;tico, ficcional, te&oacute;rico o art&iacute;stico. <a href="https://www.amaonline.eus/es/category/sin-tiempo-que-perder/"><em>Sin tiempo que perder</em></a> invita a agentes del mundo del arte a reflexionar y a especular desde diferentes perspectivas sobre los futuros del arte y sus dispositivos organizativos e institucionales. <em>AMAonline</em> tiene una dimensi&oacute;n temporal abierta y va tejiendo su compleja madeja acompa&ntilde;ando el despliegue de los programas y tem&aacute;ticas que aborda el museo en su conjunto.</p>
+						<div class="participantes">
+							<p>Participantes: Beatriz Herráez, Catalina Lozano, Thomas Boutoux, Alejandro Cesarco, Nader Koochaki y Márcia Novais.</p>
+						</div>
+										
+					</div>
+					<div class="imagenes padding-bottom-M">
+						<img src="img/ama.gif" alt="AMAonline" title="AMAonline" >
+
+					</div>
+				</div>	
+			</article>
+			<article class="enlaces-externos padding-bottom-XL">
+					<button class="boton boton-out"><a href="https://www.amaonline.eus/es/" target="_blank">AMAonline <i class="fa-solid fa-arrow-right-long"></i></a></button>
+					<button class="boton boton-out"><a href="https://www.artium.eus/es/">ARTIUM <i class="fa-solid fa-arrow-right-long"></i></a></button>
+			</article>
+			<!-- <article class="activaciones padding-bottom-XL">
+				<div class="flex padding-bottom-L">
+					<div class="punto"></div>
+					<h2 class="text-center">ACTIVACIONES</h2>
+					<div class="barra"></div>
+				</div>
+				<ul class="grid grid3">
+					<li class="hover-right">
+						<a>
+							Voces situadas 27 <i class="fa-solid fa-arrow-right-long"></i>
+							<br>
+							<span class="fecha">8 de agosto de 2023</span>
+						</a>
+					</li>
+					<li class="hover-right">
+						<a> Voces situadas 21 <i class="fa-solid fa-arrow-right-long"></i>
+							<br>
+							<span class="fecha">8 sep. 23</span>
+						</a>
+					</li>
+					<li class="hover-right">
+						<a>
+							Voces situadas 27 y un poco más largo <i class="fa-solid fa-arrow-right-long"></i>
+							<br>
+							<span class="fecha">8 de agosto de 2023</span>
+						</a>
+					</li>
+					<li class="hover-right">
+						<a>
+							Presentación del libro Imaginar nuevas Europas <i class="fa-solid fa-arrow-right-long"></i>
+							<br>
+							<span class="fecha">07/05/23</span>
+						</a>
+						</div>
+					</li>
+					<li class="hover-right">
+						<a>
+							Voces situadas 27 <i class="fa-solid fa-arrow-right-long"></i>
+							<br>
+							<span class="fecha">9/10</span>
+						</a>
+					</li>					
+				</ul>
+			</article> -->	
+		</section>
+	</main>
+	<footer class="footer full-container">
+		<div class="flex flex-center logos-centro padding-bottom-XL"> 
+			<div>
+				<img src="img/logo-tea.png">
+			</div>
+			<div>
+				<img src="img/logo-madraza.png">
+			</div>
+			<div>
+				<img src="img/logo-mncars.png">
+			</div>
+			<div>
+				<img src="img/logo-macba.png">
+			</div>
+			<div>
+				<img src="img/logo-ivam.png">
+			</div>
+			<div>
+				<img src="img/logo-esbaluard.png">
+			</div>
+			<div>
+				<img src="img/logo-artium.png">
+			</div>
+		</div>
+		<!-- <p><em>Imaginar nuevas Europas</em> es un proyecto ideado por Jesús Carrillo y realizado junto con Gala Crerar Fuentes, Maite Gandulfo y Néstor Navarro, en el marco de la Presidencia Española del consejo de la Unión Europea.</p> -->
+		<p>Esta web  ha sido creada con el apoyo de la UGR</p>
+	</footer>
+
+	<script src="js/script.js"></script>
+
+</body>
+
+</html>

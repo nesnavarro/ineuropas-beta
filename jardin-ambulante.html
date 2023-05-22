@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Jardín ambulante | Imaginar nuevas Europas</title>
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,400;0,600;0,700;1,200;1,300;1,600&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/b2091d73b7.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="style/main.css">
+	<link rel="icon" type="image/png" href="img/favicon.png"/>
+
+</head>
+
+
+<body class="background-color">
+	<header>
+			<div class="cabecera full-container padding-bottom-L slide-down">
+				<nav class="padding-bottom-M">
+					<a class="home-back" href="index.html"><i class="fa-solid fa-arrow-left"></i>&nbsp;&nbsp;Imaginar nuevas Europas</span></a>		
+				</nav>
+				
+			</div>
+	</header>
+	<main class="full-container padding-bottom-XL">
+		<section class="box slide-up">
+			<div class="padding-bottom-M">
+				<h1>Jardín ambulante</h1>
+				<h2 class="proyectos-lugar padding-bottom-M">MACBA · Barcelona</h2>
+				<div>
+					#comunidades #saberespopulares
+				</div>
+			</div>
+			<div class="padding-bottom-M">
+				<div class="player-controls">
+				    <button class="player-play-btn" role="button" aria-label="Play" data-playing="false">
+				   		<div class="player-icon-play">
+				    		<svg xmlns="https://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><title>play</title><polygon class="icon-play" points="19.05 12 6 3.36 6 20.64 19.05 12"/><rect class="icon-container" width="24" height="24"/></svg>
+				       	</div>
+				      	<div class="player-icon-pause hidden">
+				        	<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><title>pause</title><g><rect  class="icon-pause" x="6" y="3.26" width="4" height="17.48"/><rect class="icon-pause" x="14" y="3.26" width="4" height="17.48"/></g><rect class="icon-container" width="24" height="24"/></svg>
+				      	</div>
+				    </button>
+				    <div class="player-timeline">
+				      	<span class="player-time player-time-current">00:00:00</span>
+				      	<div class="player-progress">
+				        	<div class="player-progress-filled"></div>
+				      	</div>
+				      	<span class="player-time player-time-duration">00:00:00</span>
+				   	</div>
+				    <div class="player-volume-container">
+				        <input type="range" id="volume" min="0" max="1" value="1" step="0.01" class="player-volume" />
+				    </div>
+				</div>
+				<audio src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/858/outfoxing.mp3" crossorigin="anonymous" ></audio>
+				
+			</div>
+			<div class="padding-bottom-L">
+				<button class="boton" onclick="leerMas()" id="miBoton">
+					Transcripción
+				</button>
+			
+				<script>
+					function leerMas() {
+ 						var masTexto = document.getElementById("mas");
+ 						var botonTexto = document.getElementById("miBoton");
+
+ 						if (mas.style.display === "inline") {
+    						botonTexto.innerHTML = "Transcripción"; 
+   							masTexto.style.display = "none";
+ 						} else {
+    						botonTexto.innerHTML = "Ocultar transcripción"; 
+    						masTexto.style.display = "inline";
+ 						}
+					}
+				</script>	
+			</div>
+			<article id="mas">
+				<div  class="transcripcion box">
+					<div class="transcripcion-texto margin-bottom-M">
+						<p>Esta sería la transcripción. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vehicula mauris purus, quis dignissim turpis eleifend in. Nam accumsan dolor sed gravida porta. Maecenas sed augue ultricies lectus commodo euismod. Curabitur in commodo massa. Aenean viverra justo velit, vitae malesuada lorem elementum et. Suspendisse nulla mi, luctus ut suscipit id, cursus ac ipsum. Phasellus pharetra blandit lorem. Morbi sit amet fringilla quam. Sed lobortis non urna a maximus.</p>
+						<p>Esta sería la transcripción. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vehicula mauris purus, quis dignissim turpis eleifend in. Nam accumsan dolor sed gravida porta. Maecenas sed augue ultricies lectus commodo euismod. Curabitur in commodo massa. Aenean viverra justo velit, vitae malesuada lorem elementum et. Suspendisse nulla mi, luctus ut suscipit id, cursus ac ipsum. Phasellus pharetra blandit lorem. Morbi sit amet fringilla quam. Sed lobortis non urna a maximus.</p>
+						<p>Esta sería la transcripción. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vehicula mauris purus, quis dignissim turpis eleifend in. Nam accumsan dolor sed gravida porta. Maecenas sed augue ultricies lectus commodo euismod. Curabitur in commodo massa. Aenean viverra justo velit, vitae malesuada lorem elementum et. Suspendisse nulla mi, luctus ut suscipit id, cursus ac ipsum. Phasellus pharetra blandit lorem. Morbi sit amet fringilla quam. Sed lobortis non urna a maximus.</p>
+						<p>Esta sería la transcripción. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vehicula mauris purus, quis dignissim turpis eleifend in. Nam accumsan dolor sed gravida porta. Maecenas sed augue ultricies lectus commodo euismod. Curabitur in commodo massa. Aenean viverra justo velit, vitae malesuada lorem elementum et. Suspendisse nulla mi, luctus ut suscipit id, cursus ac ipsum. Phasellus pharetra blandit lorem. Morbi sit amet fringilla quam. Sed lobortis non urna a maximus.</p>
+					</div>
+					<!-- <div class="text-right">
+						<button  class="boton" onclick="leerMas()" id="miBoton">
+					Ocultar transcripción
+					</div> -->
+				</button>			
+				</div>
+			</article>
+			<article class="padding-bottom-L">
+				<div class="grid grid2">
+					<div class="descripcion-proyecto">
+						<p><em>Jardín Ambulante</em> es un proceso de negociación entre el MACBA y distintos agentes sociales del barrio del Raval (Barcelona) en torno a los usos de la plaza en la que está situado el museo y, específicamente, del edificio del Convent dels Ángels, con el horizonte de transformar la primera respondiendo a las necesidades colectivas y convertir el segundo en una infraestructura compartida entre el museo y el vecindario.</p>
+						<p>El fin de <em>Jardín Ambulante</em> es reforzar la comunicación entre la institución y las comunidades que habitan y usan el espacio público, reconociéndolas como protagonistas en la identificación de las necesidades comunes y en la toma de decisiones. Más allá de los procesos consultivos al uso o de las actividades educativas típicas del museo el <em>Jardín Ambulante</em> posibilita que los vecinos tengan una capacidad de intervención real en la configuración del lugar en el que viven y por el que transitan. Se propone como un espacio de una naturaleza diversa tanto respecto al museo como respecto a la plaza tal como está concebida actualmente: un espacio verdaderamente público.</p>
+						<p>El proyecto tiene lugar en el propio Convent dels Àngels, que se ofrece como espacio social abierto que se está equipando con los dispositivos adecuados para los usos que decidan los vecinos. También es el taller donde se diseñan y construyen los elementos que dan respuesta a las demandas colectivas respecto a la plaza: sombra, zonas verdes, juegos infantiles y de adultos, bibliotecas móviles y lugares de descanso.</p>
+						<p>El <em>Jardín Ambulante</em> implica a una multiplicidad de agentes: a miembros del museo,  a movimientos sociales, a la comunidad escolar del barrio, a las asociaciones de vecinos y a individuos interesados a nivel particular. En la negociación también entran en juego los responsables municipales e, incluso, la plataforma contra la ampliación del MACBA, surgida en el vecindario como reacción al plan original de expansión del museo. Ello hace de este espacio una membrana institucional de nuevo cuño, así como  un lugar de contacto intergeneracional e intercultural entre los diferentes agentes que confluyen en el territorio de la plaza. Al ser un proyecto abierto, los intervinientes en <em>Jardín Ambulante</em> varían y se multiplican durante el desarrollo del mismo. Las conversaciones y los proyectos derivados de las mismas vienen acompañados por el estudio de arquitectura Recetas Urbanas, bajo la dirección de Santiago Cirugeda y Alice Attout, con larga experiencia en procesos de intervención colectiva sobre el territorio.</p>
+						<p>El <em>Jardín Ambulante</em> se construye a través de conversaciones y talleres con distintos agentes del vecindario llevando las dinámicas de interacción entre museo y comunidades a un nivel más horizontal y con un mayor grado de participación en la toma de decisiones, dando a éstas concreción tanto en la utilización de los espacios como en la transformación de los mismos. De estos primeros encuentros y procesos participativos se derivan las pautas de actuación y la producción de equipamientos que están materializándose desde la primavera de 2023.</p>
+						<!-- <div class="participantes">
+							<p>Participantes:</p>
+						</div> -->
+
+										
+					</div>
+					<div class="padding-bottom-M">
+						<div class="slider-container">
+							<div class="slider">
+								<img src="img/jardin-ambulante1.jpg" alt="Slide 1">
+								<img src="img/jardin-ambulante2.jpg" alt="Slide 2">
+								<img src="img/jardin-ambulante3.jpg" alt="Slide 3">
+								<img src="img/jardin-ambulante4.jpg" alt="Slide 3">
+							</div>					
+						</div>
+						<div class="flechas">
+							<button class="prev boton"></button>
+							<button class="next boton"></button>
+						</div>
+					</div>
+				</div>	
+			</article>
+			<article class="enlaces-externos padding-bottom-XL">
+					<button class="boton boton-out"><a href="https://www.macba.cat/es/sobre-macba/museo-posible/jardin-ambulante" target="_blank">Jardín ambulante <i class="fa-solid fa-arrow-right-long"></i></a></button>
+					<button class="boton boton-out"><a href="https://www.macba.cat/es">MACBA <i class="fa-solid fa-arrow-right-long"></i></a></button>
+			</article>
+			<article class="activaciones padding-bottom-XL">
+				<div class="flex padding-bottom-L">
+					<div class="punto"></div>
+					<h2 class="text-center">ACTIVACIONES</h2>
+					<div class="barra"></div>
+				</div>
+				<ul class="grid grid3">
+					<li class="hover-right">
+						<a> Taller Projecte Amunt (Puertas abiertas) <i class="fa-solid fa-arrow-right-long"></i>
+							<br>
+							<span class="fecha">Viernes 2, 9 y 16 de junio, 2023</span>
+						</a>
+					</li>
+									
+				</ul>
+			</article>
+		</section>
+	</main>
+	<footer class="footer full-container">
+		<div class="flex flex-center logos-centro padding-bottom-XL"> 
+			<div>
+				<img src="img/logo-tea.png">
+			</div>
+			<div>
+				<img src="img/logo-madraza.png">
+			</div>
+			<div>
+				<img src="img/logo-mncars.png">
+			</div>
+			<div>
+				<img src="img/logo-macba.png">
+			</div>
+			<div>
+				<img src="img/logo-ivam.png">
+			</div>
+			<div>
+				<img src="img/logo-esbaluard.png">
+			</div>
+			<div>
+				<img src="img/logo-artium.png">
+			</div>
+		</div>
+		<p>Esta web  ha sido creada con el apoyo de la UGR</p>
+	</footer>
+
+	<script src="js/script.js"></script>
+	<script src="js/script-slider.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Fábrica de cultura popular del Albayzín | Imaginar nuevas Europas</title>
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,400;0,600;0,700;1,200;1,300;1,600&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/b2091d73b7.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="style/main.css">
+	<link rel="icon" type="image/png" href="img/favicon.png"/>
+
+</head>
+
+
+<body class="background-color">
+	<header>
+			<div class="cabecera full-container padding-bottom-L slide-down">
+				<nav class="padding-bottom-M">
+					<a class="home-back" href="index.html"><i class="fa-solid fa-arrow-left"></i>&nbsp;&nbsp;Imaginar nuevas Europas</span></a>		
+				</nav>
+				
+			</div>
+	</header>
+	<main class="full-container padding-bottom-XL">
+		<section class="box slide-up">
+			<div class="padding-bottom-M">
+				<h1>Fábrica de cultura popular del Albayzín</h1>
+				<h2 class="proyectos-lugar padding-bottom-M">La Madraza · Granada</h2>
+				<p>#saberespopulares #comunidades</p>
+			</div>
+			<div class="padding-bottom-M">
+				<div class="player-controls">
+				    <button class="player-play-btn" role="button" aria-label="Play" data-playing="false">
+				   		<div class="player-icon-play">
+				    		<svg xmlns="https://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><title>play</title><polygon class="icon-play" points="19.05 12 6 3.36 6 20.64 19.05 12"/><rect class="icon-container" width="24" height="24"/></svg>
+				       	</div>
+				      	<div class="player-icon-pause hidden">
+				        	<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><title>pause</title><g><rect  class="icon-pause" x="6" y="3.26" width="4" height="17.48"/><rect class="icon-pause" x="14" y="3.26" width="4" height="17.48"/></g><rect class="icon-container" width="24" height="24"/></svg>
+				      	</div>
+				    </button>
+				    <div class="player-timeline">
+				      	<span class="player-time player-time-current">00:00:00</span>
+				      	<div class="player-progress">
+				        	<div class="player-progress-filled"></div>
+				      	</div>
+				      	<span class="player-time player-time-duration">00:00:00</span>
+				   	</div>
+				    <div class="player-volume-container">
+				        <input type="range" id="volume" min="0" max="1" value="1" step="0.01" class="player-volume" />
+				    </div>
+				</div>
+				<audio src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/858/outfoxing.mp3" crossorigin="anonymous" ></audio>
+				
+			</div>
+			<div class="padding-bottom-L">
+				<button class="boton" onclick="leerMas()" id="miBoton">
+					Transcripción
+				</button>
+			
+				<script>
+					function leerMas() {
+ 						var masTexto = document.getElementById("mas");
+ 						var botonTexto = document.getElementById("miBoton");
+
+ 						if (mas.style.display === "inline") {
+    						botonTexto.innerHTML = "Transcripción"; 
+   							masTexto.style.display = "none";
+ 						} else {
+    						botonTexto.innerHTML = "Ocultar transcripción"; 
+    						masTexto.style.display = "inline";
+ 						}
+					}
+				</script>	
+			</div>
+			<article id="mas">
+				<div  class="transcripcion box">
+					<div class="transcripcion-texto margin-bottom-M">
+						<p>Esta sería la transcripción. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vehicula mauris purus, quis dignissim turpis eleifend in. Nam accumsan dolor sed gravida porta. Maecenas sed augue ultricies lectus commodo euismod. Curabitur in commodo massa. Aenean viverra justo velit, vitae malesuada lorem elementum et. Suspendisse nulla mi, luctus ut suscipit id, cursus ac ipsum. Phasellus pharetra blandit lorem. Morbi sit amet fringilla quam. Sed lobortis non urna a maximus.</p>
+						<p>Esta sería la transcripción. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vehicula mauris purus, quis dignissim turpis eleifend in. Nam accumsan dolor sed gravida porta. Maecenas sed augue ultricies lectus commodo euismod. Curabitur in commodo massa. Aenean viverra justo velit, vitae malesuada lorem elementum et. Suspendisse nulla mi, luctus ut suscipit id, cursus ac ipsum. Phasellus pharetra blandit lorem. Morbi sit amet fringilla quam. Sed lobortis non urna a maximus.</p>
+						<p>Esta sería la transcripción. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vehicula mauris purus, quis dignissim turpis eleifend in. Nam accumsan dolor sed gravida porta. Maecenas sed augue ultricies lectus commodo euismod. Curabitur in commodo massa. Aenean viverra justo velit, vitae malesuada lorem elementum et. Suspendisse nulla mi, luctus ut suscipit id, cursus ac ipsum. Phasellus pharetra blandit lorem. Morbi sit amet fringilla quam. Sed lobortis non urna a maximus.</p>
+						<p>Esta sería la transcripción. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vehicula mauris purus, quis dignissim turpis eleifend in. Nam accumsan dolor sed gravida porta. Maecenas sed augue ultricies lectus commodo euismod. Curabitur in commodo massa. Aenean viverra justo velit, vitae malesuada lorem elementum et. Suspendisse nulla mi, luctus ut suscipit id, cursus ac ipsum. Phasellus pharetra blandit lorem. Morbi sit amet fringilla quam. Sed lobortis non urna a maximus.</p>
+					</div>
+					<!-- <div class="text-right">
+						<button  class="boton" onclick="leerMas()" id="miBoton">
+					Ocultar transcripción
+					</div> -->
+				</button>			
+				</div>
+			</article>
+			<article class="padding-bottom-L">
+				<div class="grid grid2">
+					<div class="descripcion-proyecto">
+						<p><em>F&aacute;brica de cultura popular del Albayz&iacute;n</em> es un grupo de estudio, investigaci&oacute;n y acci&oacute;n iniciado en 2022 que se re&uacute;ne alrededor de las preguntas: &iquest;qu&eacute; es la cultura popular?, &iquest;c&oacute;mo se hace? y &iquest;cu&aacute;l es el rol que puede tener la universidad en relaci&oacute;n con la misma? Tiene como &aacute;mbito de estudio y territorio de intervenci&oacute;n Casa Porras y el granadino barrio del Albayz&iacute;n en que est&aacute; situado este espacio cultural de la Universidad de Granada. Supone un desplazamiento respecto a los saberes acad&eacute;micos y sus presupuestos mediante una contaminaci&oacute;n con la corporalidad, la oralidad, el anonimato y la fabulaci&oacute;n que caracterizan a la cultura popular.</p>
+						<p><em>F&aacute;brica de cultura popular del Albayz&iacute;n</em> es un proyecto ideado y coordinado por Jordi Carmona Hurtado, profesor de filosof&iacute;a y teor&iacute;a del arte de la Universidad de Granada, que aglutina a un grupo de estudiantes y de vecinas y pasantes ocasionales del barrio del Albayz&iacute;n, para hacerse preguntas y explorar saberes que desbordan los marcos de lo acad&eacute;mico.</p>
+						<p>Huyendo de la disciplina universitaria, la F&aacute;brica se articula en tres momentos: estudio, investigaci&oacute;n y acci&oacute;n a partir de reuniones semanales a lo largo de todo un a&ntilde;o. El primer momento gira alrededor de textos e ideas, entendidas estas como algo integrado en la vida: &ldquo;m&aacute;quinas que hacen arte&rdquo; y &ldquo;combustible espiritual&rdquo;. El segundo consiste en una exploraci&oacute;n por el barrio del Albayz&iacute;n, sus calles, templos, museos y archivos, siguiendo metodolog&iacute;as radicalmente heterodoxas, alejadas de la instrumentalidad de los saberes acad&eacute;micos. Y, un tercer momento de acci&oacute;n-intervenci&oacute;n que se materializa en el dise&ntilde;o y construcci&oacute;n de seis monumentos-mirador situados en lugares singulares del barrio que invitan a releerlo en clave de su cultura popular. &Eacute;ste &uacute;ltimo, &nbsp;concluye con la elaboraci&oacute;n de una exposici&oacute;n, que tiene como elementos centrales una estrella de seis puntas y mapas del barrio en que se inscriben y documentan los distintos monumentos. La exposici&oacute;n, con nombre <em>Cueva Mirador. seis intervenciones</em> podr&aacute; visitarse entre el 18 de mayo y el 30 de junio de 2023, en el Aljibe del Palacio del Almirante.</p>
+						<div class="participantes">
+							<p>Participantes: Miguel Ramos Fábrega, Cristian Gómez Ramos, Carlos Paredes Barea, Tara Jutglar y Pedro Martín Moreno.</p>
+						</div>
+										
+					</div>
+					<div class="imagenes padding-bottom-M">
+						<img src="img/albayzin.png" alt="Albayzín" title="Albayzín">
+					</div>
+				</div>	
+			</article>
+			<article class="enlaces-externos padding-bottom-XL">
+					<button class="boton boton-out"><a href="https://casadeporras.ugr.es/fabrica-de-cultura-popular-del-albayzin/" target="_blank">Fábrica de cultura popular de Albayzín <i class="fa-solid fa-arrow-right-long"></i></a></button>
+					<button class="boton boton-out"><a href="https://casadeporras.ugr.es/los-saberes-del-pueblo/" target="_blank">Los saberes del pueblo <i class="fa-solid fa-arrow-right-long"></i></a></button>
+					<button class="boton boton-out"><a href="https://lamadraza.ugr.es/" target="_blank">La Madraza <i class="fa-solid fa-arrow-right-long"></i></a></button>
+			</article>
+			<!-- <article class="activaciones padding-bottom-XL">
+				<div class="flex padding-bottom-L">
+					<div class="punto"></div>
+					<h2 class="text-center">ACTIVACIONES</h2>
+					<div class="barra"></div>
+				</div>
+				<ul class="grid grid3">
+					<li class="hover-right">
+						<a>
+							Voces situadas 27 <i class="fa-solid fa-arrow-right-long"></i>
+							<br>
+							<span class="fecha">8 de agosto de 2023</span>
+						</a>
+					</li>
+					<li class="hover-right">
+						<a> Voces situadas 21 <i class="fa-solid fa-arrow-right-long"></i>
+							<br>
+							<span class="fecha">8 sep. 23</span>
+						</a>
+					</li>
+					<li class="hover-right">
+						<a>
+							Voces situadas 27 y un poco más largo <i class="fa-solid fa-arrow-right-long"></i>
+							<br>
+							<span class="fecha">8 de agosto de 2023</span>
+						</a>
+					</li>
+					<li class="hover-right">
+						<a>
+							Presentación del libro Imaginar nuevas Europas <i class="fa-solid fa-arrow-right-long"></i>
+							<br>
+							<span class="fecha">07/05/23</span>
+						</a>
+						</div>
+					</li>
+					<li class="hover-right">
+						<a>
+							Voces situadas 27 <i class="fa-solid fa-arrow-right-long"></i>
+							<br>
+							<span class="fecha">9/10</span>
+						</a>
+					</li>					
+				</ul>
+			</article>	 -->
+		</section>
+	</main>
+	<footer class="footer full-container">
+		<div class="flex flex-center logos-centro padding-bottom-XL"> 
+			<div>
+				<img src="img/logo-tea.png">
+			</div>
+			<div>
+				<img src="img/logo-madraza.png">
+			</div>
+			<div>
+				<img src="img/logo-mncars.png">
+			</div>
+			<div>
+				<img src="img/logo-macba.png">
+			</div>
+			<div>
+				<img src="img/logo-ivam.png">
+			</div>
+			<div>
+				<img src="img/logo-esbaluard.png">
+			</div>
+			<div>
+				<img src="img/logo-artium.png">
+			</div>
+		</div>
+		<!-- <p><em>Imaginar nuevas Europas</em> es un proyecto ideado por Jesús Carrillo y realizado junto con Gala Crerar Fuentes, Maite Gandulfo y Néstor Navarro, en el marco de la Presidencia Española del consejo de la Unión Europea.</p> -->
+		<p>Esta web  ha sido creada con el apoyo de la UGR</p>
+	</footer>
+
+	<script src="js/script.js"></script>
+
+</body>
+
+</html>
