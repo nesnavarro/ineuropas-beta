@@ -597,7 +597,8 @@ a.lista-proyectos + div img.img-preview{
 
 @media screen and (min-width:  992px){
 	.full-container{
-		padding: 0 calc(var(--espacioXL) + 1vw);
+		padding-left: calc(var(--espacioXL) + 1vw);
+		padding-right: calc(var(--espacioXL) + 1vw);
 	}
 
 	.cabecera > div.flex{
