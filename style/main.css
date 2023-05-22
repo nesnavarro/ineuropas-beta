@@ -110,7 +110,7 @@ body{
 
 .full-container{
 	width: 100vw;
-	padding: 0 calc(var(--espacioXL) + 1vw);
+	padding: 0 calc(var(--espacioL) + 1vw);
 }
 
 .full-height{
@@ -596,7 +596,9 @@ a.lista-proyectos + div img.img-preview{
 --------------------------------------------------------------------------*/
 
 @media screen and (min-width:  992px){
-
+	.full-container{
+		padding: 0 calc(var(--espacioXL) + 1vw);
+	}
 
 	.cabecera > div.flex{
 		flex-direction: row;
