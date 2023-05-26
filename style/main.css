@@ -340,6 +340,7 @@ a.lista-proyectos + div img.img-preview{
 	border-radius: 0;
 	box-shadow: none;
 	height: 20px;
+	width: 100%;
 }
 
 .footer{
@@ -428,6 +429,11 @@ a.lista-proyectos + div img.img-preview{
 /*CONTENIDO*/
 .descripcion-proyecto p{
 	font-size: 1.2em;
+}
+
+.descripcion-proyecto a{
+	text-decoration: underline;
+	text-decoration-style: dotted;
 }
 
 .enlaces-externos{
@@ -555,10 +561,11 @@ a.lista-proyectos + div img.img-preview{
 
 
 	#pop-up{
-		width: calc(90vw - 2vw);
+/*		width: calc(90vw - 2vw);*/
+		width: 100vw;
 	}
 
-	a.lista-proyectos:hover + div img.img-preview{
+	/*a.lista-proyectos:hover + div img.img-preview{
 
 		display: block;
 		position: absolute;
@@ -568,10 +575,11 @@ a.lista-proyectos + div img.img-preview{
 		right: var(--espacioXL);
 		top: 40vh;
 		align-content: center;	
-	}
+	}*/
 
 	.logos-centro img{
 		height: 30px;
+		width: 100%;
 	}
 
 	/*PÁGINA DE PROYECTO*/
@@ -596,6 +604,7 @@ a.lista-proyectos + div img.img-preview{
 --------------------------------------------------------------------------*/
 
 @media screen and (min-width:  992px){
+
 	.full-container{
 		padding-left: calc(var(--espacioXL) + 1vw);
 		padding-right: calc(var(--espacioXL) + 1vw);
@@ -611,7 +620,8 @@ a.lista-proyectos + div img.img-preview{
 	}
 
 	#pop-up{
-		width: calc(66vw - 2vw);
+/*		width: calc(66vw - 2vw);*/
+			width: 100vw;
 	}
 
 	/*PÁGINA DE PROYECTO*/
@@ -643,11 +653,13 @@ a.lista-proyectos + div img.img-preview{
 	}
 
 	#pop-up{
-		width: 60vw;
+/*		width: 60vw;*/
+		width: 100vw;
 	}
 
 	.logos-centro img{
 		height: 35px;
+		width: 100%;
 	}
 
 }/*1200*/
