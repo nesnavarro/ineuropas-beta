@@ -20,10 +20,10 @@
 	--border-color: var(--color-black);
 	--color-background: #beffdf;
 	--color-background-hover: #b0b8b5;
-	--color-soft-grey: #e5eae8;
+	--color-soft-grey: #8f04720f;
 	--color-white: #ffff;
-	--color-black: #161068;
-	--color-grey: #403b3b;
+	--color-black: #00178f;
+	--color-grey: #403b3b; 
 	--color-europe: #1f00ff;
 	--color-europe-y: #FFDD00;
 }
@@ -57,9 +57,8 @@ p{
 }
 
 img{
-	width: 100%;
+	max-width: 100%;
 	border: solid 2px var(--color-black);
-	border-radius: 5px;
 	box-shadow: 5px 5px;
 }
 
@@ -333,15 +332,22 @@ a.lista-proyectos + div img.img-preview{
 .logos-centro{
 	column-gap: var(--gap);
 	flex-wrap: wrap;
+	align-items: center;
 }
 
 .logos-centro img{
 	border: none;
 	border-radius: 0;
 	box-shadow: none;
-	max-height: 20px;
-	height: auto;
-	width: 100%;
+	max-height: 25px;	
+}
+
+.logo-presidencia img{
+	max-height: 40px;
+}
+
+.logos-centro div{
+	padding-bottom: var(--gap);
 }
 
 .footer{
@@ -349,7 +355,7 @@ a.lista-proyectos + div img.img-preview{
 }
 
 .footer p{
-	text-align: right;
+	text-align: center;
 	padding-bottom: var(--espacioL);
 }
 
@@ -372,7 +378,15 @@ a.lista-proyectos + div img.img-preview{
 	font-family: 'Source Serif Pro', serif;
     font-size: calc(3rem + 1.3vw);
     font-style: italic;
-    padding-bottom: 0;
+    padding-bottom: 10px;
+}
+
+.aviso{
+	  text-align: center;
+    background: var(--color-soft-grey);
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 20px;
 }
 
 /*TRANSCRIPCIÓN*/
@@ -438,6 +452,16 @@ a.lista-proyectos + div img.img-preview{
 	text-decoration-style: dotted;
 }
 
+.titulo-preguntas{
+	font-size: 1.3rem;
+	padding-bottom: 0.5rem;
+}
+
+.box-pregunta{
+	border: none;
+	box-shadow: none;
+}
+
 .enlaces-externos{
 	font-size: 1.2rem;
 }
@@ -458,12 +482,12 @@ a.lista-proyectos + div img.img-preview{
 
 .activaciones li{
 	font-weight: var(--font-weight-bold);
-	font-size: var(--font-size);
+	font-size: 1.3rem ;
 }
 
 .fecha{
 	font-weight: var(--font-weight-light);
-	font-size: calc(var(--font-size));
+/*	font-size: calc(var(--font-size));*/
 }
 
 .hover-right:hover{
@@ -481,7 +505,7 @@ a.lista-proyectos + div img.img-preview{
 .slider-container {
 	width: 100%;
 	border: solid 2px var(--color-black);
-	border-radius: 5px;
+	border-radius: 20px;
 	box-shadow: 5px 5px;
 	position: relative;
 	overflow: hidden;
@@ -589,8 +613,10 @@ a.lista-proyectos + div img.img-preview{
 
 	.logos-centro img{
 		max-height: 30px;
-		height: auto;
-		width: 100%;
+	}
+
+	.logo-presidencia img{
+		max-height: 45px;
 	}
 
 	/*PÁGINA DE PROYECTO*/
@@ -598,8 +624,20 @@ a.lista-proyectos + div img.img-preview{
 		max-width: calc(100vw - var(--espacioXL));
 		border: var(--border-size) solid var(--border-color);
 		padding: var(--espacioXL);
-		border-radius: 15px;
+		border-radius: 20px;
  		box-shadow: 5px 5px;
+	}
+
+	.box-pregunta{
+		border: none;
+		box-shadow: none;
+		background-color: var(--color-soft-grey);
+		margin-bottom: var(--gap);
+	}
+
+	.titulo-preguntas{
+		font-size: 1.3rem;
+		padding-bottom: 1rem;
 	}
 
 	.grid3{
@@ -672,6 +710,10 @@ a.lista-proyectos + div img.img-preview{
 		max-height: 35px;
 	}
 
+	.logo-presidencia img{
+		max-height: 50px;
+	}
+
 }/*1200*/
 
 
@@ -682,6 +724,20 @@ a.lista-proyectos + div img.img-preview{
 /*---PLAYER-------------------------------------------------------------*/
 .hidden {
   display: none;
+}
+
+/* Cambiar el color de fondo de la barra */
+input[type="range"]::-webkit-slider-runnable-track {
+  background-color: var(--color-black);
+}
+
+/* Cambiar el color del punto */
+input[type="range"]::-webkit-slider-thumb {
+  background-color: var(--color-black);
+}
+
+.player-icon-play {
+	fill: var(--color-black);
 }
 
 .player-controls {
@@ -703,7 +759,7 @@ a.lista-proyectos + div img.img-preview{
   stroke: none;
 }
 .player-play-btn:hover {
-  fill: var(--color-europe);
+  fill: var(--color-black);
 }
 .player-play-btn svg { 
   color: var(--color-black);
@@ -727,7 +783,7 @@ a.lista-proyectos + div img.img-preview{
   display: flex;
   postion: relative;
   height: 6px;
-  background: #1610682e;
+  background: var(--color-soft-grey);
   border-radius: 25px;
   margin: 0 5px;
   flex: 10;
@@ -887,7 +943,7 @@ button {
 }
 
 .appear{
-	animation: appear 1s ease 0s 1 normal forwards;
+	animation: appear 0.6s ease 0s 1 normal forwards;
 }
 
 @keyframes appear{
@@ -899,3 +955,4 @@ button {
 		opacity: 1;
 	}
 }
+
