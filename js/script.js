@@ -12,8 +12,6 @@ const playerCurrentTime = document.querySelector(".player-time-current")
 const playerDuration = document.querySelector(".player-time-duration")
 const volumeControl = document.querySelector(".player-volume")
 document.addEventListener("DOMContentLoaded", () => {
-  // Set times after page load 
-  setTimes()
   // Update progress bar and time values as audio plays 
   audioElement.addEventListener("timeupdate", () => {
     progressUpdate()
@@ -57,14 +55,27 @@ document.addEventListener("DOMContentLoaded", () => {
   })
   track.connect(gainNode).connect(audioCtx.destination)
   // Display currentTime and duration properties in real-time 
+  // function setTimes() {
+  //   playerCurrentTime.textContent = new Date(audioElement.currentTime * 1000)
+  //     .toISOString()
+  //     .substr(11, 8)
+  //   playerDuration.textContent = new Date(audioElement.duration * 1000)
+  //     .toISOString()
+  //     .substr(11, 8)
+  // }
+  //Versión obtenida con ChatGPT para reducir a dos dígitos
   function setTimes() {
-    playerCurrentTime.textContent = new Date(audioElement.currentTime * 1000)
-      .toISOString()
-      .substr(11, 8)
-    playerDuration.textContent = new Date(audioElement.duration * 1000)
-      .toISOString()
-      .substr(11, 8)
+    const currentTime = new Date(audioElement.currentTime * 1000);
+    const currentMinutes = currentTime.getUTCMinutes();
+    const currentSeconds = currentTime.getUTCSeconds();
+    playerCurrentTime.textContent = `${currentMinutes.toString().padStart(2, '0')}:${currentSeconds.toString().padStart(2, '0')}`;
+
+    const duration = new Date(audioElement.duration * 1000);
+    const durationMinutes = duration.getUTCMinutes();
+    const durationSeconds = duration.getUTCSeconds();
+    playerDuration.textContent = `${durationMinutes.toString().padStart(2, '0')}:${durationSeconds.toString().padStart(2, '0')}`;
   }
+
   // Update player timeline progress visually 
   function progressUpdate() {
     const percent = (audioElement.currentTime / audioElement.duration) * 100
