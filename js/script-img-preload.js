@@ -1,8 +1,13 @@
 window.addEventListener("load", function() {
   var images = [
     "img/ama1.png",
-    "img/ama2.png",
-    "img/ama2.png"
+    "img/detrans.jpg",
+    "img/fabrica-1.jpg",
+    "img/jardin-ambulante1.jpg",
+    "img/lap1.jpg",
+    "img/madraza-1.jpg",
+    "img/museo-situado1.jpg",
+    "img/poliglotia1.jpg"
   ];
 
   // Precarga las imágenes
