@@ -568,6 +568,28 @@ ul.grid > li > p{
 	content: "\f061";
 }
 
+/*----- ERROR 404 -----*/
+.contenedor-aviso{
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;	
+}
+
+.aviso-404 {
+	text-align: center;
+	border: var(--border-size) solid var(--border-color);
+	padding: var(--espacioXL);
+	border-radius: 20px;
+ 	box-shadow: 5px 5px;
+	width: 90vw;
+}
+
+.aviso-404 > div{
+	justify-content: center;
+	align-items: center;
+	font-size: 1.3rem;
+}
 
 
 
@@ -647,6 +669,11 @@ ul.grid > li > p{
 	.grid3{
 		grid-template-columns: 1fr 1fr;
 	}
+
+	.aviso-404 {
+		width: 60vw;
+	}
+
 }/*768*/
 
 
@@ -688,6 +715,10 @@ ul.grid > li > p{
 		grid-template-columns: 1fr 1fr 1fr;
 	}
 
+	.aviso-404 {
+		width: 45vw;
+	}
+
 
 }/*992*/
 
@@ -716,6 +747,10 @@ ul.grid > li > p{
 
 	.logo-presidencia img{
 		max-height:65px;
+	}
+
+	.aviso-404 {
+		width: 40vw;
 	}
 
 }/*1200*/
