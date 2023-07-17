@@ -386,6 +386,8 @@ a.lista-proyectos + div img.img-preview{
 }
 
 /*TRANSCRIPCIÓN*/
+
+
 #mas{
 	display: none;
 }
@@ -437,6 +439,13 @@ a.lista-proyectos + div img.img-preview{
 	overflow-y: scroll;
 }
 
+.transcripcion-texto p > em{
+	font-weight: var(--font-weight-regular);
+}
+
+.transcripcion-texto p > strong{
+	font-weight: var(--font-weight-bold);
+}
 
 /*CONTENIDO*/
 .descripcion-proyecto p{
