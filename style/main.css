@@ -171,7 +171,7 @@ body{
 }
 
 
-div.presentacion{
+div.about{
 	top: var(--espacioL);
 	align-items: center;
 	display: inherit;
@@ -211,13 +211,13 @@ div.presentacion{
 }
 
 /*BODY*/
-/*PRESENTACION*/
-.presentacion p{
+/*about*/
+.about p{
 	font-size: 1.3rem;
 	line-height: 1.4;
 }
 
-#mostrar-pop-up{
+#mostrar-about{
 	font-weight: var(--font-weight-black);
 }
 
@@ -228,7 +228,6 @@ div.presentacion{
 	padding-bottom: var(--espacioXL);
 }
 
-/*POP-UP*/
 .overlay{
 	z-index: 2;
 	overflow-y: scroll;
@@ -236,7 +235,7 @@ div.presentacion{
 	width: 102vw;
 	background: var(--color-background);
 	border-left: solid 2px var(--border-color);
-	border-radius: 10px;
+	/* border-radius: 10px; */
 	position: fixed;
 	right: -150vw;
 	padding: var(--espacioXL);
@@ -248,19 +247,31 @@ div.presentacion{
 }
 
 
-#pop-up p{
+#about p, #encuentro p{
 	padding-bottom: var(--espacioL);
 	font-size: 1.1rem;
-  line-height: 1.4;
+	line-height: 1.4;
 }
 
-#pop-up li{
+#about li{
 	list-style-position: inside;
 	list-style: disc;
 	padding-left: var(--espacioM);
 }
 
+/*ENCUENTRO*/
+#encuentro {
+	z-index: 3;
+	width: 100vw;
+	right: 0;
+	left: -100vw;
+	transition: left 1s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+	border-right: solid 2px var(--border-color);
+}
 
+#encuentro:target{
+	left:0;
+}
 
 /*PROYECTOS*/
 a.lista-proyectos:hover span.proyectos-nombre{
@@ -621,9 +632,12 @@ ul.grid > li > p{
 	}
 
 
-	#pop-up{
-/*		width: calc(90vw - 2vw);*/
+	#about{
 		width: 100vw;
+	}
+
+	#encuentro{
+		width: calc(90vw - 2vw);
 	}
 
 	.cabecera{
@@ -703,14 +717,17 @@ ul.grid > li > p{
 		flex-direction: row;
 	}
 
-	div.presentacion{
+	div.about{
 		padding-left: var(--espacioXL);
 		border-left: var(--color-black) solid 2px;
 	}
 
-	#pop-up{
-/*		width: calc(66vw - 2vw);*/
-			width: 100vw;
+	#about{
+		width: 100vw;
+	}
+
+	#encuentro{
+		width: calc(66vw - 2vw)
 	}
 
 	/*PÁGINA DE PROYECTO*/
@@ -745,9 +762,13 @@ ul.grid > li > p{
 		grid-template-columns: 7fr 5fr;
 	}
 
-	#pop-up{
+	#about{
 /*		width: 60vw;*/
 		width: 100vw;
+	}
+
+	#encuentro{
+		width: 55vw;
 	}
 
 	.logos-centro img{
@@ -1004,4 +1025,5 @@ button {
 		opacity: 1;
 	}
 }
+
 
